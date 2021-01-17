@@ -1,0 +1,61 @@
+.header {
+  padding-top: 27px;
+  background-color: $header-black;
+}
+
+.header__logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 57px;  
+}
+
+.header__inner-wrapper {
+  text-align: center;
+}
+
+.header__city {
+  margin-bottom: 20px;
+
+  @include font_r(14px, 400, 1.5);
+  text-decoration: none;
+  color: $brown;
+}
+
+.header__title {
+  margin-bottom: 25px;
+
+  @include font_y(36px, 400, 1.16);
+  color: $white;
+}
+
+.header__text {
+  width: 231px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+
+  @include font_r(14px, 400, 1.4);
+  color: $brown;
+}
+
+.header__link {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 141px;
+  padding: 12px 17px;
+
+  @include font_r(12px, 700, 1.18);
+  color: $white;
+  text-decoration: none;
+}
+
+.header__img {
+  display: block;
+  margin-left: auto;
+  width: 275px;
+  height: 256px;
+}
+
+.header__social {
+  display: none;
+}

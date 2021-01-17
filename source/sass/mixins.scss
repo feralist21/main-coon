@@ -1,1 +1,13 @@
+@mixin font_r($size, $weight, $height) {
+  font-family: 'Roboto', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}
 
+@mixin font_y($size, $weight, $height) {
+  font-family: 'Yeseva One', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}
