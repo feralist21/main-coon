@@ -1,0 +1,75 @@
+.pets {
+  padding-top: 55px;
+  padding-bottom: 30px;
+  background-color: $pets-black;
+  text-align: center;
+  position: relative;
+}
+
+.pets__title {
+  margin-bottom: 30px;
+  @include font_y(28px, 400, 1.15);
+  color: $white;
+}
+
+.pets__text {
+  width: 282px;
+  margin: 0 auto;
+  @include font_r(14px, 300, 1.4);
+  color: $brown;
+}
+
+.pets__choise {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 234px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pets__cats-ctrl {
+  @include font_r(16px, 500, 1.17);
+  color: $white;
+  opacity: 0.2;
+  text-decoration: none;
+
+  &--active {
+    opacity: 1;
+  }
+}
+
+.pets__slider {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.pets__see-more {
+  display: block;
+  margin: 0 auto;
+  width: 141px;
+  padding: 12px 17px;
+
+  @include font_r(12px, 700, 1.18);
+  color: $white;
+  text-decoration: none;
+}
+
+.pets__slider-control {
+  width: 8px;
+  height: 20px;
+  background-color: $pets-black;
+  cursor: pointer;
+  
+  &--prev {
+    position: absolute;
+    left: 15px;
+    bottom: 230px;
+  }
+
+  &--next {
+    transform: rotate(180deg);
+    position: absolute;
+    right: 15px;
+    bottom: 230px;
+  }
+}
