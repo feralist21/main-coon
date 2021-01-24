@@ -184,20 +184,29 @@
     <section class="feedback">
       <h2 class="feedback__title">Отзывы</h2>
       <div class="feedback__slider">
-        <div class="feedback__inner-wrapper">
-          <img class="feedback__author-img" src="/" alt="Фотография автора отзыва">
-          <h3 class="feedback__author-name">Серёжа Попов</h3>
-          <p class="feedback__author-text">Я выражаю огромную благодарность вашему питомнику. Мой Феликс невероятно умен 
-            и воспитан. Огромным плюсом питомника является возможность консультироваться в любое время</p>
-          <p class="feedback__feedback-date">24 мая 2018</p>
-          <a class="social__link" href="/">
-            <img class="social__img" src="/" alt="VK">
-          </a>
-          <a class="social__link" href="/">
-            <img class="social__img" src="/" alt="TW">
-          </a> 
+        <div class="feedback__slider-item">
+          <div class="feedback__slider-img">
+            <img class="feedback__author-img" src="img/feedback_img.jpg" alt="Фотография автора отзыва">
           </div>
+          <div class="feedback__content-wrapper">
+            <blockquote class="feedback__review">
+              <cite class="feedback__author-name">Серёжа Попов</cite>
+              <p class="feedback__author-text">Я выражаю огромную благодарность вашему питомнику. Мой Феликс невероятно умен и воспитан. Огромным плюсом питомника является возможность консультироваться в любое время</p>
+            </blockquote>
+            <div class="feedback__wrapper">
+              <time datetime="2018-05-24" class="feedback__feedback-date">24 мая 2018</time>
+              <a class="social__link" href="/">
+                <img class="social__img" src="/" alt="VK">
+              </a>
+              <a class="social__link" href="/">
+                <img class="social__img" src="/" alt="TW">
+              </a> 
+            </div>
+          </div>
+          <button type="button" class="feedback__slider-control feedback__slider-control--prev arrow"></button>
+          <button type="button" class="feedback__slider-control feedback__slider-control--next arrow"></button>
         </div>
+      </div>
       </div>
     </section>
   </main>
