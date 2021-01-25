@@ -52,7 +52,12 @@
 }
 
 .feedback__wrapper {
+  display: flex;
+  width: 178px;
+  margin: 0 auto;
   margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .feedback__feedback-date {
@@ -77,4 +82,22 @@
     top: -10px;
     right: 15px;
   }
+}
+
+.feedback__social .social__link {
+  display: block;
+  width: 28px;
+  height: 28px;
+  padding-top: 4px;
+  border: 1px solid $light-brown;
+}
+
+.feedback__social > .social__item:first-child {
+  
+  order: 2;
+}
+
+.feedback__social .social__item:last-child {
+  order: 1;
+  margin-right: 15px;
 }

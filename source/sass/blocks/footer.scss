@@ -28,3 +28,21 @@
 .footer__logo {
   margin-top: 25px;
 }
+
+.footer__social {
+  width: 95px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.footer__social .social__item:last-child {
+  order: 1;
+}
+
+.footer__social .social__item:nth-child(2) {
+  order: 2;
+}
+
+.footer__social .social__item:first-child {
+  order: 3;
+}
