@@ -7,7 +7,7 @@
 
 .footer__address {
   display: block;
-  margin: 0 auto;
+  //margin: 0 auto;
   margin-bottom: 15px;
   @include font_r(14px, 400, 1.4);
   color: $white;
@@ -17,7 +17,7 @@
 
 .footer__tel {
   display: block;
-  margin: 0 auto;
+  //margin: 0 auto;
   margin-bottom: 25px;
   @include font_r(14px, 400, 1.4);
   color: $white;
@@ -45,4 +45,30 @@
 
 .footer__social .social__item:first-child {
   order: 3;
+}
+
+@media (min-width: 768px) {
+   .footer .container {
+     display: flex;
+     justify-content: space-between;
+   }
+
+   .footer__address {
+     color: $footer-cream;
+     order: 2;
+   }
+
+   .footer__tel {
+     color: $footer-creame;
+     order: 3;
+   }
+   
+   .footer__social {
+     margin: 0;
+     order: 1;
+   }
+
+  .footer__logo {
+    display: none;
+  }
 }

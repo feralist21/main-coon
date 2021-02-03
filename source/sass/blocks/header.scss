@@ -1,27 +1,30 @@
 .header {
   padding-top: 27px;
+  padding-bottom: 270px;
   background-color: $header-black;
+  background-image: url('../img/redhead_main-koon.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 .header__logo {
   display: block;
-  margin: 0 auto;
-  margin-bottom: 57px;  
+  margin: 0 auto;  
 }
 
 .header__inner-wrapper {
+  margin-top: 50px;
   text-align: center;
 }
 
 .header__city {
-  margin-bottom: 20px;
-
   @include font_r(14px, 400, 1.5);
   text-decoration: none;
   color: $brown;
 }
 
 .header__title {
+  margin-top: 7px;
   margin-bottom: 25px;
 
   @include font_y(36px, 400, 1.16);
@@ -29,8 +32,6 @@
 }
 
 .header__text {
-  width: 231px;
-  margin: 0 auto;
   margin-bottom: 35px;
 
   @include font_r(14px, 400, 1.4);
@@ -40,7 +41,6 @@
 .header__link {
   display: block;
   margin: 0 auto;
-  margin-bottom: 20px;
   width: 141px;
   padding: 12px 17px;
 
@@ -49,13 +49,56 @@
   text-decoration: none;
 }
 
-.header__img {
-  display: block;
-  margin-left: auto;
-  width: 275px;
-  height: 256px;
-}
-
 .header__social {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .header {
+    background-image: url('../img/redhead_main-koon_768.png');
+    padding-bottom: 45px;
+  }
+
+  .header__inner-wrapper {
+    margin-top: 90px;
+    text-align: left;
+  }
+
+  .header__city {
+    font-size: 16px;
+  }
+
+  .header__title {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 340px;
+    font-size: 52px;
+  }
+
+  .header__text {
+    width: 275px;
+    margin-bottom: 50px;
+    font-size: 16px;
+  }
+
+  .header__link {
+    display: block;
+    margin: 0 auto 0 0;
+    width: 200px;
+    padding: 18px 37px;
+    font-size: 14px;
+  }
+
+  .header__social {
+    display: flex;
+    margin-top: 60px; 
+  }
+
+  .header__social .social__item {
+    margin-right: 12px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

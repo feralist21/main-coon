@@ -12,8 +12,8 @@
 }
 
 .our-team__subtext {
-  width: 260px;
-  margin: 0 auto;
+  //width: 260px;
+  //margin: 0 auto;
   margin-bottom: 100px;
   text-align: center;
   @include font_r(14px, 300, 1.4);
@@ -75,14 +75,14 @@
   &--prev {
     position: absolute;
     top: -10px;
-    left: 70px;
+    left: 57px;
   }
 
   &--next {
     transform: rotate(180deg);
     position: absolute;
     top: -10px;
-    right: 70px;
+    right: 57px;
   }
 }
 
@@ -103,4 +103,94 @@
 
 .our-team__social > .social__item:last-child {
   order: 1;
+}
+
+@media (min-width: 768px) {
+  .our-team {
+    padding-top: 80px;
+    padding-bottom: 215px;
+  }
+
+  .our-team__title {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+
+  .our-team__subtext {
+    width: 510px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    font-size: 16px;
+  }
+
+  .our-team__slider-item {
+    width: 600px;
+    padding-top: 70px;
+    padding-left: 105px;
+    padding-bottom: 75px;
+    text-align: left;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 650px;
+      height: 410px;
+      background-color: transparent;
+      border: 1px solid $brown;
+      position: absolute;
+      top: -23px;
+      left: -25px;
+      z-index: 0;
+    }
+  }
+
+  .our-team__staff-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .our-team__position-staff {
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+
+  .out-team__text {
+    width: 400px;
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .our-team__social {
+    margin-top: 45px;
+    margin-left: 0;
+  }
+
+  .our-team__slider-img {
+    margin-left: 0;
+    position: absolute;
+    top: 270px;
+    left: 365px;
+    z-index: 1;
+  }
+
+  .our-team__slider-control {
+    width: 15px;
+    height: 31px;
+    //background-color: transparent;
+    //cursor: pointer;
+    
+    &--prev {
+      //position: absolute;
+      top: 447px;
+      left: 365px;
+    }
+  
+    &--next {
+      //transform: rotate(180deg);
+      //position: absolute;
+      top: 447px;
+      right: 28px;
+    }
+  }
 }

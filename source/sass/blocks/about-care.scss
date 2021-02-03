@@ -2,9 +2,10 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $header-black;
-  /* background-image: url('../img/care_bg.jpg');
+  background-image: url('../img/cat_bg.jpg');
   background-position: center;
-  background-repeat: no-repeat; */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .about-care__title {
@@ -20,7 +21,7 @@
 }
 
 .about-care__item {
-  width: 290px;
+  min-width: 290px;
   margin: 0 auto;
   margin-bottom: 30px;
   padding-top: 25px;
@@ -30,6 +31,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   border: 1px solid $brown;
   position: relative;
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -38,7 +40,6 @@
 .about-care__link {
   text-decoration: none;
 }
-
 
 .about-care__item::after {
   content: '';
@@ -66,3 +67,36 @@
   color: $white;
 }
 
+@media (min-width: 768px) {
+  .about-care {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+
+  .about-care__title {
+    font-size: 36px;
+    width: auto;
+  }
+
+  .about-care__item {
+    width: 560px;
+    min-height: 170px;
+    margin-bottom: 20px;
+    padding-top: 35px;
+    padding-left: 50px;
+    padding-right: 95px;
+
+    &::after {
+      width: 60px;
+    }
+  }
+
+  .about-care__subtitle {
+    font-size: 22px;
+  }
+
+  .about-care__text {
+    line-height: 1.6;
+  }
+
+}

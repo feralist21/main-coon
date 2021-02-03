@@ -5,3 +5,9 @@
   background-size: auto;
   background-repeat: no-repeat;
 }
+
+@media (min-width: 768px) {
+  .arrow {
+    background-image: url("../img/button_slider_768.svg");
+  }
+}
