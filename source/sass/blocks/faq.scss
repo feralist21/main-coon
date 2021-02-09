@@ -167,6 +167,10 @@
       margin-top: -40px;
       left: -110px;
     }
+
+    &::after {
+      width: 104px;
+    }
   }
 
   .faq__text {
