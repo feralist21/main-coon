@@ -150,3 +150,59 @@
     right: 103px;
   }
 }
+
+@media (min-width: 1366px) {
+  .feedback {
+    padding-bottom: 110px;
+  }
+
+  .feedback__title {
+    margin-bottom: 60px;
+  }
+
+  .feedback__slider-img {
+    margin: 0;
+    top: 46px;
+    left: 100px;
+  }
+
+  .feedback__content-wrapper {
+    width: 640px;
+    margin-right: 40px;
+    padding-top: 110px;
+    padding-left: 145px;
+    padding-bottom: 100px;
+  }
+
+  .feedback__author-name {
+    text-align: left;
+  }
+
+  .feedback__author-text {
+    width: 404px;
+    margin-left: 0;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .feedback__wrapper {
+    margin-top: 35px;
+    margin-left: 0;
+  }
+
+  .feedback__slider-control.arrow {
+    width: 15px;
+    height: 31px;
+    background-image: url("../img/button_slider_768.svg");
+  }
+
+  .feedback__slider-control--prev {
+    top: 200px;
+    left: -25px;
+  }
+
+  .feedback__slider-control--next {
+    top: 200px;
+    right: -25px;
+  }
+}
