@@ -67,3 +67,14 @@
     font-size: 16px;
   }
 }
+
+@media (min-width: 1366px) {
+  .advantages__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    margin: 0;
+  }
+}
