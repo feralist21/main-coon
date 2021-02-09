@@ -194,3 +194,30 @@
     }
   }
 }
+
+@media (min-width: 1366px) {
+  .our-team {
+    padding-bottom: 95px;
+  }
+
+  .our-team__slider-item {
+    margin-right: 100px;
+  }
+
+  .our-team__slider-img {
+    top: -24px;
+    left: -339px;
+  }
+
+  .our-team__slider-control {
+    &--prev {
+      top: 150px;
+      left: -14px;
+    }
+  
+    &--next {
+      top: 150px;
+      right: -14px;
+    }
+  }
+}
