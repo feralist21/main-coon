@@ -24,8 +24,7 @@
 
 .faq__item {
   min-width: 290px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   border: 1px solid $brown;
   
   &:last-child {
@@ -102,8 +101,8 @@
   }
 
   .faq__item {
-    width: 554px;  
-
+    width: 554px;
+    margin: 0 35px 25px auto; 
   }
 
   .faq__question {
@@ -138,5 +137,33 @@
     width: 385px;
     font-size: 16px;
     line-height: 1.55;
+  }
+}
+
+@media (min-width: 1366px) {
+  .faq {
+    padding-top: 75px;
+    padding-bottom: 85px;
+  }
+
+  .faq__title {
+    margin-bottom: 25px;
+  }
+
+  .faq__list {
+    margin-top: 50px;
+  }
+
+  .faq__item {
+    margin: 0 110px 36px auto;
+    width: 795px;
+  }
+
+  .faq__question {
+    padding: 46px 104px 44px 42px;
+  }
+
+  .faq__text {
+    width: 550px;
   }
 }
