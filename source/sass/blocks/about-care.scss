@@ -98,5 +98,18 @@
   .about-care__text {
     line-height: 1.6;
   }
+}
 
+@media (min-width: 1366px) {
+  .about-care__list {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 45px;
+  }
+
+  .about-care__item {
+    margin: 0;
+  }
 }
