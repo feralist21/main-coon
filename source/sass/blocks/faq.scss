@@ -161,6 +161,12 @@
 
   .faq__question {
     padding: 46px 104px 44px 42px;
+
+    &::before {
+      font-size: 70px;
+      margin-top: -40px;
+      left: -110px;
+    }
   }
 
   .faq__text {
