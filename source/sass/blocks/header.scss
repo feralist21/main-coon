@@ -7,9 +7,11 @@
   background-position: bottom right;
 }
 
-.header__logo {
+.header__logo-link {
   display: block;
-  margin: 0 auto;  
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;  
 }
 
 .header__inner-wrapper {
@@ -25,7 +27,7 @@
 
 .header__title {
   margin-top: 7px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 
   @include font_y(36px, 400, 1.16);
   color: $white;
@@ -91,7 +93,25 @@
 
   .header__social {
     display: flex;
-    margin-top: 60px; 
+    margin-top: 60px;
+    
+    &-vk {
+      width: 13px;
+      height: 9px;
+      fill: $white;
+    }
+
+    &-tw {
+      width: 16px;
+      height: 11px;
+      fill: $white;
+    }
+
+    &-fb {
+      width: 6px;
+      height: 12px;
+      fill: $white;
+    }
   }
 
   .header__social .social__item {
@@ -120,7 +140,6 @@
   }
 
   .header__social {
-    //display: block;
     flex-direction: column;
     align-items: center;
     position: absolute;

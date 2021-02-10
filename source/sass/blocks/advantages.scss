@@ -34,6 +34,27 @@
   }
 }
 
+.advantages__free-vet-img {
+  width: 80px;
+  height: 90px;
+  fill: $brown;
+  stroke: $pets-black;
+}
+
+.advantages__counseling24-img {
+  width: 80px;
+  height: 71px;
+  fill: $brown;
+  stroke: $pets-black;
+}
+
+.advantages__food-img {
+  width: 57px;
+  height: 90px;
+  fill: $brown;
+  stroke: $pets-black;
+}
+
 .advantages__text-item {
   width: 196px;
   margin: 20px auto 0;
@@ -60,6 +81,23 @@
   .advantages__item {
     width: 360px;
     min-height: 306px;
+  }
+
+  .advantages__free-vet-img {
+    width: 98px;
+    height: 110px;
+  }
+  
+  .advantages__counseling24-img {
+    width: 107px;
+    height: 97px;
+  }
+  
+  .advantages__food-img {
+    width: 71px;
+    height: 111px;
+    fill: $brown;
+    stroke: $pets-black;
   }
 
   .advantages__text-item {

@@ -10,7 +10,7 @@
   //margin: 0 auto;
   margin-bottom: 15px;
   @include font_r(14px, 400, 1.4);
-  color: $white;
+  color: $footer-creame;
   text-decoration: none;
   cursor: pointer;
 }
@@ -20,12 +20,13 @@
   //margin: 0 auto;
   margin-bottom: 25px;
   @include font_r(14px, 400, 1.4);
-  color: $white;
+  color: $footer-creame;
   text-decoration: none;
   cursor: pointer;
 }
 
-.footer__logo {
+.footer__logo-link {
+  display: block;
   margin-top: 25px;
 }
 
@@ -33,6 +34,24 @@
   width: 95px;
   margin: 0 auto;
   justify-content: space-between;
+
+  &-vk {
+    width: 25px;
+    height: 14px;
+    fill: $brown;
+  }
+
+  &-tw {
+    width: 22px;
+    height: 16px;
+    fill: $brown;
+  }
+
+  &-fb {
+    width: 8px;
+    height: 17px;
+    fill: $brown;
+  }
 }
 
 .footer__social .social__item:last-child {
@@ -68,6 +87,21 @@
    .footer__social {
      margin: 0;
      order: 1;
+
+     &-vk {
+      width: 21px;
+      height: 12px;
+    }
+  
+    &-tw {
+      width: 20px;
+      height: 14px;
+    }
+  
+    &-fb {
+      width: 7px;
+      height: 15px;
+    }
    }
 
   .footer__logo-link {
@@ -88,10 +122,15 @@
   }
 
   .footer__logo-link {
+    margin-top: 0;
     display: block;
   }
 
   .footer__logo {
     margin-top: 0;
+  }
+
+  .footer__social {
+    width: 70px;
   }
 }

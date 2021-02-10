@@ -91,6 +91,24 @@
   margin: 0 auto;
   margin-top: 25px;
   justify-content: space-between;
+
+  &-vk {
+    width: 18px;
+    height: 10px;
+    fill: $white;
+  }
+
+  &-tw {
+    width: 16px;
+    height: 12px;
+    fill: $white;
+  }
+
+  &-fb {
+    width: 6px;
+    height: 13px;
+    fill: $white;
+  }
 }
 
 .our-team__social > .social__item:first-child {
@@ -164,6 +182,21 @@
   .our-team__social {
     margin-top: 45px;
     margin-left: 0;
+
+    &-vk {
+      width: 22px;
+      height: 13px;
+    }
+  
+    &-tw {
+      width: 20px;
+      height: 14px;
+    }
+  
+    &-fb {
+      width: 7px;
+      height: 15px;
+    } 
   }
 
   .our-team__slider-img {
