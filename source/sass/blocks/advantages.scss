@@ -13,20 +13,17 @@
 }
 
 .advantages__text {
-  //width: 284px;
   margin: 30px 0 50px;
   @include font_r(14px, 300, 1.4);
   color: $brown;
 }
 
 .advantages__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 290px;
   min-height: 248px;
   margin: 0 auto 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: $pets-black;
 
   &:last-child {
@@ -34,9 +31,30 @@
   }
 }
 
+.advantages__link {
+  display: block;
+  max-width: 260px;
+  min-height: 218px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-out;
+
+  &:hover {
+    background-color: $brown;
+  }
+
+  &:hover svg {
+    fill: $white;
+    stroke: $brown;
+  }
+}
+
 .advantages__free-vet-img {
   width: 80px;
   height: 90px;
+  margin-bottom: 20px;
   fill: $brown;
   stroke: $pets-black;
 }
@@ -44,6 +62,7 @@
 .advantages__counseling24-img {
   width: 80px;
   height: 71px;
+  margin-bottom: 20px;
   fill: $brown;
   stroke: $pets-black;
 }
@@ -51,13 +70,14 @@
 .advantages__food-img {
   width: 57px;
   height: 90px;
+  margin-bottom: 20px;
   fill: $brown;
   stroke: $pets-black;
 }
 
 .advantages__text-item {
-  width: 196px;
-  margin: 20px auto 0;
+  max-width: 200px;
+  margin: 0 auto;
   @include font_r(14px, 300, 1.4);
   color: $white;
 }
@@ -81,27 +101,38 @@
   .advantages__item {
     width: 360px;
     min-height: 306px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .advantages__link {
+    max-width: 320px;
+    min-height: 272px;
+    padding-top: 40px;
+    padding-bottom: 10px;
   }
 
   .advantages__free-vet-img {
     width: 98px;
     height: 110px;
+    margin-bottom: 35px;
   }
   
   .advantages__counseling24-img {
     width: 107px;
     height: 97px;
+    margin-bottom: 35px;
   }
   
   .advantages__food-img {
     width: 71px;
     height: 111px;
-    fill: $brown;
-    stroke: $pets-black;
+    margin-bottom: 35px;
   }
 
   .advantages__text-item {
-    margin: 35px auto 0;
+    max-width: 230px;
+    margin: 0 auto;
     font-size: 16px;
   }
 }
@@ -114,5 +145,9 @@
 
   .advantages__item {
     margin: 0;
+  }
+
+  .advantages__counseling24-img {
+    margin-bottom: 50px;
   }
 }

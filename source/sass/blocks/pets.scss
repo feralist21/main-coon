@@ -33,6 +33,11 @@
   color: $white;
   opacity: 0.2;
   text-decoration: none;
+  transition: opacity 0.3s ease-out;
+
+  &:hover {
+    opacity: 1;
+  }
 
   &--active {
     opacity: 1;

@@ -21,27 +21,37 @@
 }
 
 .about-care__item {
-  min-width: 290px;
-  margin: 0 auto;
   margin-bottom: 30px;
-  padding-top: 25px;
-  padding-left: 25px;
-  padding-bottom: 25px;
-  padding-right: 46px;
-  background-color: rgba(0, 0, 0, 0.3);
-  border: 1px solid $brown;
-  position: relative;
-
+  
   &:last-child {
     margin-bottom: 0;
   }
 }
 
 .about-care__link {
+  display: block;
+  width: 290px;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-bottom: 24px;
+  padding-right: 48px;
   text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid $brown;
+  position: relative;
+  transition: background-color 0.3s ease-out;
+
+  &:hover {
+    background-color: $footer-black;
+  }
+
+  &:hover::after {
+    background-color: $footer-black;
+  }
 }
 
-.about-care__item::after {
+.about-care__link::after {
   content: '';
   display: block;
   width: 46px;
@@ -51,9 +61,11 @@
   background-position: center;
   background-repeat: no-repeat;
   border-left: 1px solid $brown;
+  border-right: 1px solid $brown;
   position: absolute;
   top: 0;
   right: 0;
+  transition: background-color 0.3s ease-out;
 }
 
 .about-care__subtitle {
@@ -79,9 +91,12 @@
   }
 
   .about-care__item {
+    margin-bottom: 20px;
+  }
+
+  .about-care__link {
     width: 560px;
     min-height: 170px;
-    margin-bottom: 20px;
     padding-top: 35px;
     padding-left: 50px;
     padding-right: 95px;

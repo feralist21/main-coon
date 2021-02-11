@@ -12,8 +12,6 @@
 }
 
 .our-team__subtext {
-  //width: 260px;
-  //margin: 0 auto;
   margin-bottom: 100px;
   text-align: center;
   @include font_r(14px, 300, 1.4);
@@ -86,7 +84,7 @@
   }
 }
 
-.our-team__social {
+.our-team__social  {
   width: 70px;
   margin: 0 auto;
   margin-top: 25px;
@@ -96,18 +94,33 @@
     width: 18px;
     height: 10px;
     fill: $white;
+    transition: fill 0.3s ease-out;
   }
 
   &-tw {
     width: 16px;
     height: 12px;
     fill: $white;
+    transition: fill 0.3s ease-out;
   }
 
   &-fb {
     width: 6px;
     height: 13px;
     fill: $white;
+    transition: fill 0.3s ease-out;
+  }
+
+  &-vk:hover, &-tw:hover, &-fb:hover {
+    fill: $brown;
+  }
+
+  &-vk:focus, &-tw:focus, &-fb:focus {
+    fill: $brown;
+  }
+
+  &-vk:active, &-tw:active, &-fb:active {
+    opacity: 0.5;
   }
 }
 
@@ -138,29 +151,19 @@
     width: 510px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     font-size: 16px;
   }
 
   .our-team__slider-item {
-    width: 600px;
+    width: 650px;
+    margin-left: 0;
     padding-top: 70px;
     padding-left: 105px;
     padding-bottom: 75px;
     text-align: left;
-
-    &::after {
-      content: '';
-      display: block;
-      width: 650px;
-      height: 410px;
-      background-color: transparent;
-      border: 1px solid $brown;
-      position: absolute;
-      top: -23px;
-      left: -25px;
-      z-index: 0;
-    }
+    border: 24px solid $header-black;
+    outline: 1px solid $brown;
   }
 
   .our-team__staff-name {
@@ -203,27 +206,22 @@
     margin-left: 0;
     position: absolute;
     top: 270px;
-    left: 365px;
+    left: 360px;
     z-index: 1;
   }
 
   .our-team__slider-control {
     width: 15px;
     height: 31px;
-    //background-color: transparent;
-    //cursor: pointer;
     
     &--prev {
-      //position: absolute;
-      top: 447px;
-      left: 365px;
+      top: 470px;
+      left: 338px;
     }
   
     &--next {
-      //transform: rotate(180deg);
-      //position: absolute;
-      top: 447px;
-      right: 28px;
+      top: 470px;
+      right: 52px;
     }
   }
 }
@@ -234,6 +232,7 @@
   }
 
   .our-team__slider-item {
+    margin-left: auto;
     margin-right: 100px;
   }
 
@@ -244,12 +243,12 @@
 
   .our-team__slider-control {
     &--prev {
-      top: 150px;
+      top: 185px;
       left: -14px;
     }
   
     &--next {
-      top: 150px;
+      top: 185px;
       right: -14px;
     }
   }

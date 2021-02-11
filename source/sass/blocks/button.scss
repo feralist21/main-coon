@@ -1,6 +1,22 @@
 .button {
   border: 1px solid $brown;
   outline: none;
-  background-color: $header-black;
+  background-color: transparent;
   cursor: pointer;
+  color: $white;
+  transition: border 0.3s ease-out, color 0.3s ease-out;
+
+  &:hover {
+    border: 1px solid $white;
+    color: $brown;
+  }
+
+  &:focus {
+    border: 1px solid $white;
+    color: $brown;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }

@@ -4,4 +4,9 @@
   fill: #a07b50;
   stroke: #151313;
   stroke-width: 0.8;
+  transition: fill 0.3s ease-out;
+
+  &:hover {
+    fill: $white;
+  }
 }

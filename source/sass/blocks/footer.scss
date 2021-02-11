@@ -7,22 +7,30 @@
 
 .footer__address {
   display: block;
-  //margin: 0 auto;
   margin-bottom: 15px;
   @include font_r(14px, 400, 1.4);
   color: $footer-creame;
   text-decoration: none;
   cursor: pointer;
+  transition: color 0.3s ease-out;
+
+  &:hover {
+    color: $brown;
+  }
 }
 
 .footer__tel {
   display: block;
-  //margin: 0 auto;
   margin-bottom: 25px;
   @include font_r(14px, 400, 1.4);
   color: $footer-creame;
   text-decoration: none;
   cursor: pointer;
+  transition: color 0.3s ease-out;
+
+  &:hover {
+    color: $brown;
+  }
 }
 
 .footer__logo-link {
@@ -39,18 +47,33 @@
     width: 25px;
     height: 14px;
     fill: $brown;
+    transition: fill 0.3s ease-out;
   }
 
   &-tw {
     width: 22px;
     height: 16px;
     fill: $brown;
+    transition: fill 0.3s ease-out;
   }
 
   &-fb {
     width: 8px;
     height: 17px;
     fill: $brown;
+    transition: fill 0.3s ease-out;
+  }
+
+  &-vk:hover, &-tw:hover, &-fb:hover {
+    fill: $white;
+  }
+
+  &-vk:focus, &-tw:focus, &-fb:focus {
+    fill: $white;
+  }
+
+  &-vk:active, &-tw:active, &-fb:active {
+    opacity: 0.5;
   }
 }
 
