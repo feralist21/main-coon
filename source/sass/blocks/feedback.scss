@@ -10,8 +10,20 @@
   color: $white;
 }
 
-.feedback__slider-item {
+.feedback__slider {
   position: relative;
+}
+
+.feedback__slider .slider__button--prev {
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+.feedback__slider .slider__button--next {
+  position: absolute;
+  top: -10px;
+  right: 0;
 }
 
 .feedback__slider-img {
@@ -24,9 +36,10 @@
 
 .feedback__content-wrapper {
   width: 290px;
+  min-height: 357px;
   margin: 0 auto;
   padding-top: 120px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   background-color: $header-black;
 }
 
@@ -62,25 +75,6 @@
 .feedback__feedback-date {
   @include font_r(12px, 400, 1.4);
   color: $brown;
-}
-.feedback__slider-control {
-  width: 8px;
-  height: 20px;
-  background-color: transparent;
-  cursor: pointer;
-  
-  &--prev {
-    position: absolute;
-    top: -10px;
-    left: 0;
-  }
-
-  &--next {
-    transform: rotate(180deg);
-    position: absolute;
-    top: -10px;
-    right: 0;
-  }
 }
 
 .feedback__social-vk {
@@ -150,6 +144,7 @@
 
   .feedback__content-wrapper {
     width: 578px;
+    min-height: 367px;
     padding-top: 140px;
     background-color: $footer-black;
   }
@@ -171,20 +166,20 @@
     top: -62%;
   }
 
-  .feedback__slider-control.arrow {
+  .feedback__slider .slider__button {
     width: 60px;
-    height: 17px;
-    background-image: url("../img/arrow_768.svg");
+    height: 18px;
+    background-image: url("../img/slider_arrow-btn.svg");
   }
 
-  .feedback__slider-control--prev {
-    top: 32px;
-    left: 105px;
+  .feedback__slider .slider__button--prev {
+    top: 40px;
+    left: 115px;
   }
-
-  .feedback__slider-control--next {
-    top: 33px;
-    right: 103px;
+  
+  .feedback__slider .slider__button--next {
+    top: 40px;
+    right: 115px;
   }
 
   .feedback__social-vk {
@@ -216,6 +211,7 @@
 
   .feedback__content-wrapper {
     width: 640px;
+    min-height: 413px;
     margin-right: 40px;
     padding-top: 110px;
     padding-left: 145px;
@@ -238,18 +234,18 @@
     margin-left: 0;
   }
 
-  .feedback__slider-control.arrow {
-    width: 15px;
-    height: 31px;
-    background-image: url("../img/button_slider_768.svg");
+  .feedback__slider .slider__button {
+    width: 14px;
+    height: 30px;
+    background-image: url("../img/slider_button.svg");
   }
 
-  .feedback__slider-control--prev {
+  .feedback__slider .slider__button--prev {
     top: 200px;
     left: -25px;
   }
-
-  .feedback__slider-control--next {
+  
+  .feedback__slider .slider__button--next {
     top: 200px;
     right: -25px;
   }

@@ -168,21 +168,33 @@
           <a class="pets__cats-ctrl" href="/">Котята</a>
         </div>
         <div class="pets__slider">
-          <div class="slider__item">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/black_cat_768.jpg">
-              <img class="pets__cats" src="img/black_cat.jpg" alt="Черный кот">
-            </picture>
+          <div class="slider">
+            <div class="slider__item pets__slider-item" id="pets__slider-item">
+              <picture>
+                <source media="(min-width: 1366px)" srcset="img/black_cat_1366.png">
+                <source media="(min-width: 768px)" srcset="img/black_cat_768.png">
+                <img class="pets__cat" src="img/black_cat.jpg" alt="Черный кот">
+              </picture>
+            </div>
+            <div class="slider__item pets__slider-item" id="pets__slider-item">
+              <picture>
+                <source media="(min-width: 1366px)" srcset="img/white_cat_1366.png">
+                <source media="(min-width: 768px)" srcset="img/white_cat_768.png">
+                <img class="pets__cat" src="img/white_cat.jpg" alt="Белый кот">
+              </picture>
+            </div>
+            <div class="slider__item pets__slider-item" id="pets__slider-item">
+              <picture>
+                <source media="(min-width: 1366px)" srcset="img/brown_cat_1366.png">
+                <source media="(min-width: 768px)" srcset="img/brown_cat_768.png">
+                <img class="pets__cat" src="img/brown_cat.png" alt="Коричневый кот">
+              </picture>
+              
+            </div>
           </div>
-          <!-- <div class="slider__item">
-            <img class="pets__cats" src="img/black_cat.jpg" alt="Черный кот">
-          </div>
-          <div class="slider__item">
-            <img class="pets__cats" src="img/black_cat.jpg" alt="Черный кот">
-          </div> -->        
+        <button type="button" class="slider__button slider__button--prev" id="pets__button-prev"></button>
+        <button type="button" class="slider__button slider__button--next" id="pets__button-next"></button>
         </div>
-        <button type="button" class="pets__slider-control pets__slider-control--prev arrow"></button>
-        <button type="button" class="pets__slider-control pets__slider-control--next arrow"></button>
         <a class="pets__see-more button" href="/">Смотреть больше</a>
       </div> 
     </section>
@@ -273,43 +285,80 @@
         <h2 class="our-team__title">Наша команда</h2>
         <p class="our-team__subtext">Все сотрудники нашего питомника  дипломированые специалисты в области фелинологии и ветеринарии</p>
         <div class="our-team__slider">
-          <div class="our-team__slider-item">
-            <picture>
-              <source media="(min-width: 1366px)" srcset="img/our-team_1366.jpg">
-              <source media="(min-width: 768px)" srcset="img/our-team_768.jpg">
-              <img class="our-team__slider-img" src="img/our-team.jpg" alt="Фото сотрудника компании">
-            </picture>
-            <blockquote class="our-team__inner-wrapper">
-              <h3 class="our-team__staff-name">Серёжа Попов</h3>
-              <cite class="our-team__position-staff">Основатель питомника</cite>
-              <p class="out-team__text">Наш питомник занимается разведением Мейн-Кунов на протяжении 15 лет. Мы в ответе за каждого приобретенного вами питомца</p>
-            </blockquote>
-            <ul class="our-team__social social">
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <svg class="our-team__social-vk">
-                    <use xlink:href="#icon-vk"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <svg class="our-team__social-tw">
-                    <use xlink:href="#icon-tw"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <svg class="our-team__social-fb">
-                    <use xlink:href="#icon-fb"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <div class="slider">
+            <div class="our-team__slider-item" id="our-team__slider-item">
+              <picture>
+                <source media="(min-width: 1366px)" srcset="img/our-team_1366.jpg">
+                <source media="(min-width: 768px)" srcset="img/our-team_768.jpg">
+                <img class="our-team__slider-img" src="img/our-team.jpg" alt="Фото сотрудника компании">
+              </picture>
+              <blockquote class="our-team__inner-wrapper">
+                <h3 class="our-team__staff-name">Серёжа Попов</h3>
+                <cite class="our-team__position-staff">Основатель питомника</cite>
+                <p class="out-team__text">Наш питомник занимается разведением Мейн-Кунов на протяжении 15 лет. Мы в ответе за каждого приобретенного вами питомца</p>
+              </blockquote>
+              <ul class="our-team__social social">
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg class="our-team__social-vk">
+                      <use xlink:href="#icon-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg class="our-team__social-tw">
+                      <use xlink:href="#icon-tw"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg class="our-team__social-fb">
+                      <use xlink:href="#icon-fb"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="our-team__slider-item" id="our-team__slider-item">
+              <picture>
+                <source media="(min-width: 1366px)" srcset="img/our-team2_1366.jpg">
+                <source media="(min-width: 768px)" srcset="img/our-team2_768.jpg">
+                <img class="our-team__slider-img" src="img/our-team2.jpg" alt="Фото сотрудника компании">
+              </picture>
+              <blockquote class="our-team__inner-wrapper">
+                <h3 class="our-team__staff-name">Оксана Алексеева</h3>
+                <cite class="our-team__position-staff">Менеджер питомника</cite>
+                <p class="out-team__text">Наш питомник занимается разведением Мейн-Кунов на протяжении 15 лет. Мы в ответе за каждого приобретенного вами питомца</p>
+              </blockquote>
+              <ul class="our-team__social social">
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg class="our-team__social-vk">
+                      <use xlink:href="#icon-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg class="our-team__social-tw">
+                      <use xlink:href="#icon-tw"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg class="our-team__social-fb">
+                      <use xlink:href="#icon-fb"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <button class="our-team__slider-control our-team__slider-control--prev arrow"></button>
-          <button class="our-team__slider-control our-team__slider-control--next arrow"></button>
+          <button type="button" class="slider__button slider__button--prev" id="our-team__button-prev"></button>
+          <button type="button" class="slider__button slider__button--next" id="our-team__button-next"></button>
         </div>
       </div>
     </section>
@@ -353,42 +402,78 @@
       <div class="container">
         <h2 class="feedback__title">Отзывы</h2>
         <div class="feedback__slider">
-          <div class="feedback__slider-item">
-            <div class="feedback__slider-img">
-              <picture>
-                <source media="(min-width: 1366px)" srcset="img/feedback_img_1366.jpg">
-                <source media="(min-width: 768px)" srcset="img/feedback_img_768.jpg">
-                <img class="feedback__author-img" src="img/feedback_img.jpg" alt="Фотография автора отзыва">
-              </picture>
-            </div>
-            <div class="feedback__content-wrapper">
-              <blockquote class="feedback__review">
-                <cite class="feedback__author-name">Серёжа Попов</cite>
-                <p class="feedback__author-text">Я выражаю огромную благодарность вашему питомнику. Мой Феликс невероятно умен и воспитан. Огромным плюсом питомника является возможность консультироваться в любое время</p>
-              </blockquote>
-              <div class="feedback__wrapper">
-                <time datetime="2018-05-24" class="feedback__feedback-date">24 мая 2018</time>
-                <ul class="feedback__social social">
-                  <li class="social__item">
-                    <a class="social__link" href="#">
-                      <svg class="feedback__social-vk">
-                        <use xlink:href="#icon-vk"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a class="social__link" href="#">
-                      <svg class="feedback__social-tw">
-                        <use xlink:href="#icon-tw"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
+          <div class="slider">
+            <div class="feedback__slider-item" id="feedback__slider-item">
+              <div class="feedback__slider-img">
+                <picture>
+                  <source media="(min-width: 1366px)" srcset="img/feedback_img_1366.jpg">
+                  <source media="(min-width: 768px)" srcset="img/feedback_img_768.jpg">
+                  <img class="feedback__author-img" src="img/feedback_img.jpg" alt="Фотография автора отзыва">
+                </picture>
+              </div>
+              <div class="feedback__content-wrapper">
+                <blockquote class="feedback__review">
+                  <cite class="feedback__author-name">Серёжа Попов</cite>
+                  <p class="feedback__author-text">Я выражаю огромную благодарность вашему питомнику. Мой Феликс невероятно умен и воспитан. Огромным плюсом питомника является возможность консультироваться в любое время</p>
+                </blockquote>
+                <div class="feedback__wrapper">
+                  <time datetime="2018-05-24" class="feedback__feedback-date">24 мая 2018</time>
+                  <ul class="feedback__social social">
+                    <li class="social__item">
+                      <a class="social__link" href="#">
+                        <svg class="feedback__social-vk">
+                          <use xlink:href="#icon-vk"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="#">
+                        <svg class="feedback__social-tw">
+                          <use xlink:href="#icon-tw"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <button type="button" class="feedback__slider-control feedback__slider-control--prev arrow"></button>
-            <button type="button" class="feedback__slider-control feedback__slider-control--next arrow"></button>
+            <div class="feedback__slider-item" id="feedback__slider-item">
+              <div class="feedback__slider-img">
+                <picture>
+                  <source media="(min-width: 1366px)" srcset="img/feedback_img2_1366.jpg">
+                  <source media="(min-width: 768px)" srcset="img/feedback_img2_768.jpg">
+                  <img class="feedback__author-img" src="img/feedback_img2.jpg" alt="Фотография автора отзыва">
+                </picture>
+              </div>
+              <div class="feedback__content-wrapper">
+                <blockquote class="feedback__review">
+                  <cite class="feedback__author-name">Ольга Петрова</cite>
+                  <p class="feedback__author-text">Огромное спасибо ребятам из питомника! Моя Алексстраза очень красивая и ласковая. Очень удобная услуга по подбору питания для котика</p>
+                </blockquote>
+                <div class="feedback__wrapper">
+                  <time datetime="2018-05-24" class="feedback__feedback-date">24 мая 2018</time>
+                  <ul class="feedback__social social">
+                    <li class="social__item">
+                      <a class="social__link" href="#">
+                        <svg class="feedback__social-vk">
+                          <use xlink:href="#icon-vk"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="#">
+                        <svg class="feedback__social-tw">
+                          <use xlink:href="#icon-tw"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
+          <button type="button" class="slider__button slider__button--prev" id="feedback__button-prev"></button>
+          <button type="button" class="slider__button slider__button--next" id="feedback__button-next"></button>
         </div>
       </div> 
     </section>
@@ -429,5 +514,9 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/pets-slider.js"></script>
+  <script src="js/our-team-slider.js"></script>
+  <script src="js/feedback-slider.js"></script>
 </body>
 </html>

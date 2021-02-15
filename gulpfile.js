@@ -96,6 +96,7 @@ const clean = () => {
 const watcher = () => {
   gulp.watch("source/*.html", html);
   gulp.watch("source/sass/**/*.scss", style);
+  gulp.watch("source/js/*.js", js);
   gulp.watch("source/img/**/*.{jpg,svg,png}", images);
 };
 
