@@ -50,6 +50,23 @@
     display: block;
     width: 43px;
     height: 100%;
+    background-color: transparent;
+    background-image: url('../img/plus.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-left: 1px solid $brown;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: background-color 0.3s ease-out;
+  }
+
+  &--active::after {
+    content: '';
+    display: block;
+    width: 43px;
+    height: 100%;
     background-color: $brown;
     background-image: url('../img/minus.svg');
     background-position: center;
@@ -61,6 +78,7 @@
     right: 0;
     transition: background-color 0.3s ease-out;
   }
+
 
   &:hover {
     background-color: $footer-black;
@@ -113,26 +131,34 @@
 
   .faq__item {
     width: 554px;
-    margin: 0 35px 25px auto; 
-  }
-
-  .faq__question {
-    padding: 20px 141px 20px 30px;
-    font-size: 16px;
+    margin: 0 35px 25px auto;
     counter-increment: faq-counter;
+    position: relative; 
 
     &::before {
       content: "0"counter(faq-counter);
-      margin-top: -29px;
       color: $brown;
       @include font_r(50px, 700, 1.15);
       position: absolute;
       left: -75px;
-      top: 50%;
+      top: 10px;
     }
+  }
+
+  .faq__question {
+    padding: 26px 141px 26px 30px;
+    font-size: 16px;
 
     &::after {
       width: 73px;
+    }
+
+    &--one {
+      padding: 15px 141px 15px 30px;;
+    }
+
+    &--three {
+      padding: 15px 141px 15px 30px;;
     }
   }
 
@@ -167,16 +193,16 @@
   .faq__item {
     margin: 0 110px 36px auto;
     width: 795px;
+
+    &::before {
+      font-size: 70px;
+      top: 15px;
+      left: -110px;
+    }
   }
 
   .faq__question {
     padding: 46px 104px 44px 42px;
-
-    &::before {
-      font-size: 70px;
-      margin-top: -40px;
-      left: -110px;
-    }
 
     &::after {
       width: 104px;
@@ -189,7 +215,6 @@
     padding-bottom: 30px;
     text-align: left;
   }
-
 
   .faq__text {
     width: 545px;
