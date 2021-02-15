@@ -1,4 +1,4 @@
-const sliderItemTeam = document.querySelectorAll('#our-team__slider-item');
+const sliderItemTeam = document.querySelectorAll('.our-team__slider-item');
 const prevBtnTeam = document.querySelector('#our-team__button-prev');
 const nextBtnTeam = document.querySelector('#our-team__button-next');
 let slideIndexTeam = 1; 

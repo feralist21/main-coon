@@ -1,8 +1,7 @@
-const sliderItem = document.querySelectorAll('#pets__slider-item');
+const sliderItem = document.querySelectorAll('.pets__slider-item');
 const prev = document.querySelector('#pets__button-prev');
 const next = document.querySelector('#pets__button-next');
 let slideIndex = 1;
-
  
 showSlidesPets(slideIndex);
 

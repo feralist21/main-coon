@@ -1,4 +1,4 @@
-const sliderItemFeedback = document.querySelectorAll('#feedback__slider-item');
+const sliderItemFeedback = document.querySelectorAll('.feedback__slider-item');
 const prevFeedback = document.querySelector('#feedback__button-prev');
 const nextFeedback = document.querySelector('#feedback__button-next');
 let slideIndexFeedback = 1; 
