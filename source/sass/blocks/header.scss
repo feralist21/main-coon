@@ -1,10 +1,21 @@
 .header {
-  padding-top: 27px;
-  padding-bottom: 270px;
+  //padding-top: 27px;
+  //padding-bottom: 270px;
   background-color: $header-black;
+  //background-image: url('../img/redhead_main-koon.png');
+  //background-repeat: no-repeat;
+  //background-position: bottom right;
+}
+
+.header__container {
   background-image: url('../img/redhead_main-koon.png');
   background-repeat: no-repeat;
   background-position: bottom right;
+}
+
+.header__wrapper {
+  padding-top: 27px;
+  padding-bottom: 270px;
 }
 
 .header__logo-link {
@@ -55,11 +66,14 @@
 }
 
 @media (min-width: 768px) {
-  .header {
+  .header__container {
     background-image: url('../img/redhead_main-koon_768.png');
-    padding-bottom: 45px;
   }
 
+  .header__wrapper {
+    padding-bottom: 45px;
+  }
+  
   .header__inner-wrapper {
     margin-top: 90px;
     text-align: left;
@@ -138,13 +152,13 @@
 }
 
 @media (min-width: 1366px) {
-  .header {
-    padding-top: 45px;
-    padding-bottom: 175px;
+  .header__container {
     background-image: url('../img/redhead_main-koon_1366.png');
   }
 
-  .header .container {
+  .header__wrapper {
+    padding-top: 45px;
+    padding-bottom: 175px;
     position: relative;
   }
 
@@ -157,8 +171,9 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
-    bottom: -110px;
-    left: 83px;
+    bottom: 60px;
+    left: -25px;
+
     &::before {
       content: '';
       display: block;
